@@ -1,0 +1,9 @@
+_BASE_: Base-coco-stuff-164K-171.yaml
+MODEL:
+  META_ARCHITECTURE: "SAN"
+#  META_ARCHITECTURE: "SAN_MATTOR"
+#  WEIGHTS: './output/ckpt_clipCD_GF1_itrs_50.pth'
+
+SOLVER:
+  BACKBONE_MULTIPLIER: 1.0
+

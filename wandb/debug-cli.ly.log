@@ -1,0 +1,83 @@
+2024-01-27 04:43:56 ERROR Traceback (most recent call last):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 244, in login
+    wandb.setup(settings=login_settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 108, in __init__
+    self._settings = self._settings_setup(settings, self._early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 127, in _settings_setup
+    s._apply_config_files(_logger=early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1624, in _apply_config_files
+    self.update(
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1500, in update
+    self.__dict__[key].update(settings.pop(key), source=source)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 581, in update
+    self._value = self._validate(self._preprocess(value))
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 551, in _validate
+    if not v(value):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1128, in _validate_base_url
+    raise UsageError(f"Invalid URL: {value}")
+wandb.errors.UsageError: Invalid URL: [hostname]
+
+2024-01-27 04:46:44 ERROR Traceback (most recent call last):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 244, in login
+    wandb.setup(settings=login_settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 108, in __init__
+    self._settings = self._settings_setup(settings, self._early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 127, in _settings_setup
+    s._apply_config_files(_logger=early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1624, in _apply_config_files
+    self.update(
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1500, in update
+    self.__dict__[key].update(settings.pop(key), source=source)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 581, in update
+    self._value = self._validate(self._preprocess(value))
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 551, in _validate
+    if not v(value):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1128, in _validate_base_url
+    raise UsageError(f"Invalid URL: {value}")
+wandb.errors.UsageError: Invalid URL: [hostname]
+
+2024-01-27 04:47:18 ERROR Traceback (most recent call last):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 674, in sync
+    api = _get_cling_api()
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/cli/cli.py", line 130, in _get_cling_api
+    wandb.setup(settings=dict(_cli_only_mode=True))
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 108, in __init__
+    self._settings = self._settings_setup(settings, self._early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_setup.py", line 127, in _settings_setup
+    s._apply_config_files(_logger=early_logger)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1624, in _apply_config_files
+    self.update(
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1500, in update
+    self.__dict__[key].update(settings.pop(key), source=source)
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 581, in update
+    self._value = self._validate(self._preprocess(value))
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 551, in _validate
+    if not v(value):
+  File "/home/ly/anaconda3/envs/VLpy39/lib/python3.9/site-packages/wandb/sdk/wandb_settings.py", line 1128, in _validate_base_url
+    raise UsageError(f"Invalid URL: {value}")
+wandb.errors.UsageError: Invalid URL: [hostname]
+
